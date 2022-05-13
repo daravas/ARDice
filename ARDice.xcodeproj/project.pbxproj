@@ -11,6 +11,7 @@
 		491CF353282E8D8700C04C85 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491CF352282E8D8700C04C85 /* ContentView.swift */; };
 		491CF355282E8D8B00C04C85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 491CF354282E8D8B00C04C85 /* Assets.xcassets */; };
 		491CF358282E8D8B00C04C85 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 491CF357282E8D8B00C04C85 /* Preview Assets.xcassets */; };
+		49F24F21282E9DE400683BD6 /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = 49F24F20282E9DE400683BD6 /* FocusEntity */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49F24F21282E9DE400683BD6 /* FocusEntity in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = ARDice;
+			packageProductDependencies = (
+				49F24F20282E9DE400683BD6 /* FocusEntity */,
+			);
 			productName = ARDice;
 			productReference = 491CF34D282E8D8700C04C85 /* ARDice.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 491CF344282E8D8700C04C85;
+			packageReferences = (
+				49F24F1F282E9DE400683BD6 /* XCRemoteSwiftPackageReference "FocusEntity" */,
+			);
 			productRefGroup = 491CF34E282E8D8700C04C85 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -269,8 +277,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ARDice/Preview Content\"";
+				DEVELOPMENT_TEAM = VZ3ZA29GS8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Augmented Reality needs access to the camera to see your environment";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -298,8 +308,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ARDice/Preview Content\"";
+				DEVELOPMENT_TEAM = VZ3ZA29GS8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Augmented Reality needs access to the camera to see your environment";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -341,6 +353,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		49F24F1F282E9DE400683BD6 /* XCRemoteSwiftPackageReference "FocusEntity" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maxxfrazer/FocusEntity";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		49F24F20282E9DE400683BD6 /* FocusEntity */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 49F24F1F282E9DE400683BD6 /* XCRemoteSwiftPackageReference "FocusEntity" */;
+			productName = FocusEntity;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 491CF345282E8D8700C04C85 /* Project object */;
 }
